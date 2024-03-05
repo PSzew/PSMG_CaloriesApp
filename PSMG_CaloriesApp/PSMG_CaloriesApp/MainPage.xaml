@@ -20,8 +20,6 @@
                    TextColor="CadetBlue"
                    FontAttributes="Bold"/>
             <Label x:Name="CaloriesLbl"
-                   FontSize="20"
-                   TextColor="HotPink"
                    HorizontalOptions="Center"/>
             <ProgressBar x:Name="CaloriesProgressBar"
                          HorizontalOptions="Center"
