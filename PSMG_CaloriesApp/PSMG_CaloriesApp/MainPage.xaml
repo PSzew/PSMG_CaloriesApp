@@ -19,7 +19,6 @@
                    FontSize="25"
                    FontAttributes="Bold"/>
             <Label x:Name="CaloriesLbl"
-                   Text="1000kcal/2500kcal"
                    HorizontalOptions="Center"/>
             <ProgressBar x:Name="CaloriesProgressBar"
                          HorizontalOptions="Center"
