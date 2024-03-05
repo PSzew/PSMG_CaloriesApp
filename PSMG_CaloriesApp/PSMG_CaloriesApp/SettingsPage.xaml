@@ -66,15 +66,27 @@
                    Grid.Column="1"
                    x:Name="ChangeWaterCupsEntry"
                    HorizontalOptions="Center"
+                   VerticalOptions="Center"
                    WidthRequest="200"
-                   HeightRequest="50"/>
+                   HeightRequest="50"
+                   TextColor="CadetBlue"
+                   Margin="0,0,0,15"
+                   FontAttributes="Bold"/>
             <Button x:Name="ChangeDataBtn"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
                     Text="Zmien dane"
                     HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="CadetBlue"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    BackgroundColor="Transparent"
+                    BorderColor="CadetBlue"
+                    BorderWidth="5"
+                    CornerRadius="20"
                     WidthRequest="200"
-                    HeightRequest="50"
+                    HeightRequest="70"
                     Clicked="ChangeDataBtn_Clicked"/>
         </Grid>
     </ContentPage.Content>
