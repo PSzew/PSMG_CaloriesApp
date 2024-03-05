@@ -4,7 +4,8 @@
              x:Class="PSMG_CaloriesApp.MainPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ustawienia"
-                     x:Name="SettingsToolBar"/>
+                     x:Name="SettingsToolBar"
+                     Clicked="SettingsToolBar_Clicked"/>
     </ContentPage.ToolbarItems>
     <Grid>
         <Grid.RowDefinitions>
@@ -43,6 +44,20 @@
             <Label x:Name="WaterCupsLbl"
                    Text="1 szklanka na 8"
                    HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="DecreaseWaterCupAmountBtn"
+                        Text="-"
+                        HorizontalOptions="Center"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="DecreaseWaterCupAmountBtn_Clicked"/>
+                <Button x:Name="IncreaseWaterCupAmountBtn"
+                        Text="+"
+                        HorizontalOptions="Center"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="IncreaseWaterCupAmountBtn_Clicked"/>
+            </StackLayout>
         </StackLayout>
 
     </Grid>

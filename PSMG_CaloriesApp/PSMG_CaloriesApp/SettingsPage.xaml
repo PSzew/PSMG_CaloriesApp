@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PSMG_CaloriesApp.SettingsPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Kalorie"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry Grid.Row="0"
+                   Grid.Column="1"
+                   x:Name="ChangeCaloriesEntry"
+                   HorizontalOptions="Center"
+                   WidthRequest="200"
+                   HeightRequest="50"/>
+            <Label Text="Woda"
+       Grid.Row="1"
+       Grid.Column="0"/>
+            <Entry Grid.Row="1"
+       Grid.Column="1"
+       x:Name="ChangeWaterEntry"
+       HorizontalOptions="Center"
+       WidthRequest="200"
+       HeightRequest="50"/>
+            <Label Text="Kubki wody"
+       Grid.Row="2"
+       Grid.Column="0"/>
+            <Entry Grid.Row="2"
+       Grid.Column="1"
+       x:Name="ChangeWaterCupsEntry"
+       HorizontalOptions="Center"
+       WidthRequest="200"
+       HeightRequest="50"/>
+            <Button x:Name="ChangeDataBtn"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Text="Zmien dane"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="50"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
