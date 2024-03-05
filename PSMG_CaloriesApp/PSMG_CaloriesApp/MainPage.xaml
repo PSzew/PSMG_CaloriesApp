@@ -20,9 +20,8 @@
                    TextColor="CadetBlue"
                    FontAttributes="Bold"/>
             <Label x:Name="CaloriesLbl"
-                   Text="1000kcal/2500kcal"
                    FontSize="20"
-                   TextColor="Blue"
+                   TextColor="HotPink"
                    HorizontalOptions="Center"/>
             <ProgressBar x:Name="CaloriesProgressBar"
                          HorizontalOptions="Center"
@@ -53,10 +52,12 @@
                      Grid.Row="1">
             <Label Text="Ilość wypitej wody:"
                    HorizontalOptions="Center"
-                   FontSize="25"
+                   FontSize="30"
+                   TextColor="CadetBlue"
                    FontAttributes="Bold"/>
             <Label x:Name="WaterCupsLbl"
-                   Text="1 szklanka na 8"
+                   FontSize="20"
+                   TextColor="HotPink"
                    HorizontalOptions="Center"/>
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="DecreaseWaterCupAmountBtn"
