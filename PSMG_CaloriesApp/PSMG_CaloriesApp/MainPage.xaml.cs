@@ -63,5 +63,14 @@ namespace PSMG_CaloriesApp
             WaterCupsLbl.Text = GlobalClass.Day.WaterCups.ToString() + " szklanek z " + GlobalClass.Settings.WaterGoal.ToString() + " szklanek";
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            GlobalClass.GetDay();
+            GlobalClass.GetSettings();
+            RefreshCalories();
+            RefreshWater();
+        }
+
     }
 }
