@@ -34,6 +34,16 @@
                     WidthRequest="250"
                     HeightRequest="50"/>
         </StackLayout>
-        
+        <StackLayout Orientation="Vertical"
+                     Grid.Row="1">
+            <Label Text="Ilość wypitej wody:"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   FontAttributes="Bold"/>
+            <Label x:Name="WaterCupsLbl"
+                   Text="1 szklanka na 8"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+
     </Grid>
 </ContentPage>
