@@ -14,5 +14,20 @@ namespace PSMG_CaloriesApp
         {
             InitializeComponent();
         }
+
+        private void DecreaseWaterCupAmountBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SettingsToolBar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SettingsPage());
+        }
+
+        private void IncreaseWaterCupAmountBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

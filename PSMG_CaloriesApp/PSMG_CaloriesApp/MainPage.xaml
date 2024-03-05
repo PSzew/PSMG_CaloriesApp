@@ -2,23 +2,63 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PSMG_CaloriesApp.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ustawienia"
+                     x:Name="SettingsToolBar"
+                     Clicked="SettingsToolBar_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Orientation="Vertical" 
+                     Grid.Row="0">
+            <Label Text="Ilość spożytych kalorii:"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   FontAttributes="Bold"/>
+            <Label x:Name="CaloriesLbl"
+                   Text="1000kcal/2500kcal"
+                   HorizontalOptions="Center"/>
+            <ProgressBar x:Name="CaloriesProgressBar"
+                         HorizontalOptions="Center"
+                         WidthRequest="200"
+                         HeightRequest="50"/>
+            <Entry x:Name="AddCaloriesEntry"
+                   HorizontalOptions="Center"
+                   WidthRequest="200"
+                   HeightRequest="50"/>
+            <Button x:Name="AddCaloriesBtn"
+                    Text="Dodaj kalorie"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
+                    HeightRequest="50"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical"
+                     Grid.Row="1">
+            <Label Text="Ilość wypitej wody:"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   FontAttributes="Bold"/>
+            <Label x:Name="WaterCupsLbl"
+                   Text="1 szklanka na 8"
+                   HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="DecreaseWaterCupAmountBtn"
+                        Text="-"
+                        HorizontalOptions="Center"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="DecreaseWaterCupAmountBtn_Clicked"/>
+                <Button x:Name="IncreaseWaterCupAmountBtn"
+                        Text="+"
+                        HorizontalOptions="Center"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Clicked="IncreaseWaterCupAmountBtn_Clicked"/>
+            </StackLayout>
+        </StackLayout>
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
-
+    </Grid>
 </ContentPage>
