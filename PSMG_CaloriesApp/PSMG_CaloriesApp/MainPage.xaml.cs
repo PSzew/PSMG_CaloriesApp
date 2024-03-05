@@ -34,10 +34,5 @@ namespace PSMG_CaloriesApp
         {
 
         }
-
-        private void AddCaloriesBtn_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
