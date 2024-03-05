@@ -52,6 +52,9 @@ namespace PSMG_CaloriesApp.ClassModel
             File.WriteAllText(SettingsLocation, JsonConvert.SerializeObject(Settings));
         }
 
-        public
+        public static void OverRideDay()
+        {
+            File.WriteAllText(DayLocation, JsonConvert.SerializeObject(Day));
+        }
     }
 }
